@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="baghi.naeem.com.assignment4.MainPageActivity">
+
+    <TextView
+        android:text="USERNAME"
+        android:id="@+id/main_username"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/first_part"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/bordered_shape"
+                    android:padding="3dp"
+                    android:layout_width="0dip"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/flight_img"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/flight"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+
+                    <TextView
+                        android:text="@string/flight"
+                        android:layout_below="@+id/flight_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="25sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/bordered_shape"
+                    android:padding="3dp"
+                    android:layout_width="0dip"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/train_img"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/train"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+
+                    <TextView
+                        android:text="@string/train"
+                        android:layout_below="@+id/train_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="25sp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:id="@+id/second_part"
+                android:layout_below="@+id/first_part"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/bordered_shape"
+                    android:padding="3dp"
+                    android:layout_width="0dip"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/bus_img"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/bus"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+
+                    <TextView
+                        android:text="@string/bus"
+                        android:layout_below="@+id/bus_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="25sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/bordered_shape"
+                    android:padding="3dp"
+                    android:layout_width="0dip"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/hotel_img"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/hotel"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+
+                    <TextView
+                        android:text="@string/hotel"
+                        android:layout_below="@+id/hotel_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="25sp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:id="@+id/third_part"
+                android:layout_below="@+id/second_part"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/bordered_shape"
+                    android:padding="3dp"
+                    android:layout_width="0dip"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/holiday_img"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/holiday"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+
+                    <TextView
+                        android:text="@string/holiday"
+                        android:layout_below="@+id/holiday_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="25sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/bordered_shape"
+                    android:padding="3dp"
+                    android:layout_width="0dip"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/about_img"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/about"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+
+                    <TextView
+                        android:text="@string/about"
+                        android:layout_below="@+id/about_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="25sp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

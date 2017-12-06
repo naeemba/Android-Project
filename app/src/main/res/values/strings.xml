@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Assignment 3</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="email">Email Address</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="done">Done</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="send_confirmation_to">Send Confirmation To:</string>
+    <string name="sms">SMS</string>
+
+    <string name="train">Train</string>
+    <string name="bus">Bus</string>
+    <string name="hotel">Hotel</string>
+    <string name="holiday">Holiday</string>
+    <string name="about">About Me</string>
+    <string name="flight">Flight</string>
+
+    <string-array name="languages">
+        <item>English</item>
+        <item>Persian</item>
+        <item>Hindi</item>
+    </string-array>
+</resources>
