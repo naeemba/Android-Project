@@ -34,22 +34,22 @@ public class SignUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        firstName = findViewById(R.id.sign_up_first_name);
-        lastName = findViewById(R.id.sign_up_last_name);
-        phone = findViewById(R.id.sign_up_mobile);
-        email = findViewById(R.id.sign_up_email);
-        username = findViewById(R.id.sign_up_username);
-        password = findViewById(R.id.sign_up_password);
-        confirmPassword = findViewById(R.id.sign_up_confirm_password);
+        firstName = (EditText) findViewById(R.id.sign_up_first_name);
+        lastName = (EditText) findViewById(R.id.sign_up_last_name);
+        phone = (EditText) findViewById(R.id.sign_up_mobile);
+        email = (EditText) findViewById(R.id.sign_up_email);
+        username = (EditText) findViewById(R.id.sign_up_username);
+        password = (EditText) findViewById(R.id.sign_up_password);
+        confirmPassword = (EditText) findViewById(R.id.sign_up_confirm_password);
 
-        language = findViewById(R.id.sign_up_language);
+        language = (Spinner) findViewById(R.id.sign_up_language);
 
-        gender = findViewById(R.id.sign_up_radio_group);
+        gender = (RadioGroup) findViewById(R.id.sign_up_radio_group);
 
-        smsNotification = findViewById(R.id.sign_up_sms_checkbox);
-        emailNotification = findViewById(R.id.sign_up_email_checkbox);
+        smsNotification = (CheckBox) findViewById(R.id.sign_up_sms_checkbox);
+        emailNotification = (CheckBox) findViewById(R.id.sign_up_email_checkbox);
 
-        signUp = findViewById(R.id.sign_up);
+        signUp = (Button) findViewById(R.id.sign_up);
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,6 +57,7 @@ public class SignUpActivity extends AppCompatActivity {
                     signUp();
                     Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
                     startActivity(intent);
+                    SignUpActivity.this.finish();
                 }
             }
         });
@@ -106,6 +107,11 @@ public class SignUpActivity extends AppCompatActivity {
             return false;
         }
         if(isNull(email.getText())) {
+            toast("Email");
+            return false;
+        }
+        String emailText = email.getText().toString();
+        if(!emailText.contains("@") || emailText.startsWith("@") || emailText.startsWith(".") || emailText.contains("..") || emailText.contains("@.")) {
             toast("Email");
             return false;
         }

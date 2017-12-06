@@ -31,6 +31,7 @@
                 android:orientation="horizontal">
 
                 <RelativeLayout
+                    android:id="@+id/flight_layout"
                     android:layout_marginRight="3dp"
                     android:background="@drawable/bordered_shape"
                     android:padding="3dp"
@@ -56,6 +57,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/train_layout"
                     android:layout_marginLeft="3dp"
                     android:background="@drawable/bordered_shape"
                     android:padding="3dp"
@@ -91,6 +93,7 @@
                 android:orientation="horizontal">
 
                 <RelativeLayout
+                    android:id="@+id/bus_layout"
                     android:layout_marginRight="3dp"
                     android:background="@drawable/bordered_shape"
                     android:padding="3dp"
@@ -116,6 +119,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/hotel_layout"
                     android:layout_marginLeft="3dp"
                     android:background="@drawable/bordered_shape"
                     android:padding="3dp"
@@ -151,6 +155,7 @@
                 android:orientation="horizontal">
 
                 <RelativeLayout
+                    android:id="@+id/holiday_layout"
                     android:layout_marginRight="3dp"
                     android:background="@drawable/bordered_shape"
                     android:padding="3dp"
@@ -176,6 +181,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/about_layout"
                     android:layout_marginLeft="3dp"
                     android:background="@drawable/bordered_shape"
                     android:padding="3dp"

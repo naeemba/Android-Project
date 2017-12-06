@@ -1,9 +1,5 @@
 package baghi.naeem.com.assignment4;
 
-/**
- * Created by sharp on 11/15/2017.
- */
-
 public class User {
 
     private String firstName;
