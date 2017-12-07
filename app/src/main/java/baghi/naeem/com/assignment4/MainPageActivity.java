@@ -1,5 +1,6 @@
 package baghi.naeem.com.assignment4;
 
+import android.content.Intent;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -63,7 +64,8 @@ public class MainPageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i(MainPageActivity.class.getSimpleName(), "Hotel Button Clicked");
-                toast("Hotel is not implemented yet.");
+                Intent intent = new Intent(MainPageActivity.this, HotelActivity.class);
+                startActivity(intent);
             }
         });
 

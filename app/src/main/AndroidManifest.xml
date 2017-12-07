@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="baghi.naeem.com.assignment4.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,10 +17,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="baghi.naeem.com.assignment4.SignUpActivity"
+            android:name=".SignUpActivity"
             android:label="@string/title_activity_sign_up"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="baghi.naeem.com.assignment4.MainPageActivity"></activity>
+        <activity android:name=".MainPageActivity" />
+        <activity android:name=".HotelActivity"></activity>
     </application>
 
 </manifest>
