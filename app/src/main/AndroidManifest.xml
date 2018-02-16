@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="baghi.naeem.com.assignment4">
+    package="baghi.naeem.com.assignment6">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -9,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,11 +20,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SignUpActivity"
+            android:name=".activities.SignUpActivity"
             android:label="@string/title_activity_sign_up"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainPageActivity" />
-        <activity android:name=".HotelActivity"></activity>
+        <activity android:name=".activities.MainPageActivity" />
+        <activity android:name=".activities.HotelActivity" />
+        <activity android:name=".activities.HotelReservationActivity" />
+        <activity android:name=".activities.ServerURLActivity" />
+        <activity android:name=".activities.ReservationsActivity"></activity>
     </application>
 
 </manifest>

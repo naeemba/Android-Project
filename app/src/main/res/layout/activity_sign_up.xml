@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="baghi.naeem.com.assignment4.SignUpActivity"
+    tools:context="baghi.naeem.com.assignment6.activities.SignUpActivity"
     tools:showIn="@layout/activity_sign_up"
     >
     <ScrollView

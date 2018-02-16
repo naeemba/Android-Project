@@ -4,7 +4,9 @@
     <string name="password">Password</string>
     <string name="login">Login</string>
     <string name="sign_up">Sign Up</string>
+    <string name="enter_server_url">Enter Server URL</string>
     <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="save">Save</string>
 
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
@@ -24,10 +26,22 @@
     <string name="holiday">Holiday</string>
     <string name="about">About Me</string>
     <string name="flight">Flight</string>
+    <string name="reservations">Reservations</string>
+
+    <string name="check_in">check-in</string>
+    <string name="check_out">check-out</string>
+    <string name="reserve">reserve</string>
+    <string name="count">count</string>
 
     <string-array name="languages">
         <item>English</item>
         <item>Persian</item>
         <item>Hindi</item>
+    </string-array>
+
+    <string-array name="reservation_room_types">
+        <item>Single-bed</item>
+        <item>Double-bed</item>
+        <item>Triple-bed</item>
     </string-array>
 </resources>

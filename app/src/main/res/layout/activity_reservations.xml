@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="baghi.naeem.com.assignment6.activities.HotelActivity">
+    tools:context=".activities.ReservationsActivity">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/hotel_recycler_view"
+        android:id="@+id/reservation_recycler_view"
         android:scrollbars="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

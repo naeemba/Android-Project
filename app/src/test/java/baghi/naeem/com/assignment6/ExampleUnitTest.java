@@ -1,4 +1,4 @@
-package baghi.naeem.com.assignment4;
+package baghi.naeem.com.assignment6;
 
 import org.junit.Test;
 

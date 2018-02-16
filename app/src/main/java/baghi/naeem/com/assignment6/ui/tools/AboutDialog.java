@@ -1,23 +1,25 @@
-package baghi.naeem.com.assignment4;
+package baghi.naeem.com.assignment6.ui.tools;
 
 import android.app.Dialog;
-import android.graphics.drawable.GradientDrawable;
-import android.os.Build;
+import android.content.Context;
+import android.os.AsyncTask;
 import android.support.v4.app.DialogFragment;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
-import android.text.Layout;
-import android.util.Log;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import baghi.naeem.com.assignment6.activities.MainPageActivity;
+import baghi.naeem.com.assignment6.dao.Command;
+import baghi.naeem.com.assignment6.dao.DataSource;
+import baghi.naeem.com.assignment6.entities.User;
+import baghi.naeem.com.assignment6.util.LogMaker;
 
 public class AboutDialog extends DialogFragment {
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        String username = getArguments().getString("username");
-        Log.e(AboutDialog.class.getSimpleName(), username);
-        User user = DataSource.getUsers().get(username);
+        User user = MainPageActivity.user;
 
         LinearLayout linearLayout = new LinearLayout(this.getContext());
         linearLayout.setOrientation(LinearLayout.VERTICAL);
@@ -30,8 +32,7 @@ public class AboutDialog extends DialogFragment {
         addItem(linearLayout, "Mobile: " + user.getMobileNo());
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setTitle("Username: " + username)
-                .setView(linearLayout);
+        builder.setTitle("Username: " + user.getUsername()).setView(linearLayout);
         return builder.create();
     }
 

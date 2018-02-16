@@ -1,4 +1,4 @@
-package baghi.naeem.com.assignment4;
+package baghi.naeem.com.assignment6.ui.tools;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -6,6 +6,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import baghi.naeem.com.assignment6.dao.DataSource;
+import baghi.naeem.com.assignment6.R;
+import baghi.naeem.com.assignment6.entities.Hotel;
 
 public class HotelRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
@@ -24,7 +28,7 @@ public class HotelRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.View
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         HotelRecyclerAdapter.ViewHolder hotelViewHolder = (ViewHolder) holder;
-        Hotel hotel = DataSource.getHotels().get(position);
+        Hotel hotel = DataSource.getHotels().get(position + 1 + "");
         hotelViewHolder.nameTextView.setText(hotel.getName());
         hotelViewHolder.addressTextView.setText(hotel.getAddress());
         hotelViewHolder.imageView.setImageResource(hotel.getImageId());

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="baghi.naeem.com.assignment4.MainPageActivity">
+    tools:context="baghi.naeem.com.assignment6.activities.MainPageActivity">
 
     <TextView
         android:text="USERNAME"
@@ -199,6 +199,42 @@
                     <TextView
                         android:text="@string/about"
                         android:layout_below="@+id/about_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="25sp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:id="@+id/fourth_part"
+                android:layout_below="@+id/third_part"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/reservation_layout"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/bordered_shape"
+                    android:padding="3dp"
+                    android:layout_width="0dip"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/reservation_img"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/reservations"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+
+                    <TextView
+                        android:text="@string/reservations"
+                        android:layout_below="@+id/reservation_img"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"

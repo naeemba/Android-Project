@@ -1,4 +1,4 @@
-package baghi.naeem.com.assignment4;
+package baghi.naeem.com.assignment6;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

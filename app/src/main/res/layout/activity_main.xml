@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="baghi.naeem.com.assignment4.MainActivity">
+    tools:context="baghi.naeem.com.assignment6.activities.MainActivity">
 
 
     <ScrollView
@@ -66,26 +66,40 @@
     </ScrollView>
 
     <LinearLayout
-        android:id="@+id/sign_up_layout"
-        android:layout_width="120dp"
-        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="15dp"
         android:orientation="horizontal">
-
-        <ImageView
-            android:layout_centerInParent="true"
-            android:src="@drawable/sign_up"
-            android:layout_width="30dp"
-            android:layout_height="30dp" />
-
-        <TextView
-            android:textColor="@color/colorPrimary"
-            android:text="@string/sign_up"
-            android:layout_marginLeft="10dp"
-            android:textSize="20sp"
+        <LinearLayout
+            android:id="@+id/sign_up_layout"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:src="@drawable/sign_up"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:text="@string/sign_up"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/change_server_url_text"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/enter_server_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textSize="20sp" />
     </LinearLayout>
+
 </RelativeLayout>
